@@ -187,7 +187,7 @@ Possible future improvements include:
 
 ## Author
 
-**Omer Cheway**
+**Omer Chewai**
 
 Final Examination Project
 
