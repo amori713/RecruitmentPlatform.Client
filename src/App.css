@@ -1,38 +1,145 @@
-.App {
+body {
+  background-color: #f4f6f9;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+  padding: 80px 40px;
+  border-radius: 20px;
+  margin-bottom: 40px;
   text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero-title {
+  font-size: 52px;
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hero-text {
+  font-size: 20px;
+  opacity: 0.9;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.stats-box {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.stats-box:hover {
+  transform: translateY(-4px);
+}
+
+.stats-number {
+  font-size: 32px;
+  font-weight: bold;
+  color: #2563eb;
+}
+
+.card {
+  border: none;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.job-card {
+  border: none;
+  border-radius: 15px;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.badge {
+  font-size: 12px;
+  padding: 8px 12px;
+}
+
+.btn {
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  transform: scale(1.03);
+}
+
+.btn-primary {
+  border-radius: 10px;
+}
+
+.btn-success {
+  border-radius: 10px;
+}
+
+.btn-danger {
+  border-radius: 10px;
+}
+
+.form-control {
+  border-radius: 10px;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(37, 99, 235, 0.2);
+}
+
+.table {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.footer {
+  margin-top: 80px;
+  padding: 30px;
+  text-align: center;
+  background: #111827;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.footer p {
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer {
+  box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.search-box {
+  max-width: 500px;
+  margin: 0 auto 30px auto;
+}
+
+.loading-text {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #2563eb;
+  margin-top: 40px;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
 }
