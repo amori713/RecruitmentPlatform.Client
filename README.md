@@ -1,70 +1,196 @@
-# Getting Started with Create React App
+> IMPORTANT:
+> Start the API project first in Visual Studio before running the React frontend.
+> # Recruitment Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+Recruitment Platform is a full-stack web application built with React, ASP.NET Core Web API and SQL Server.
 
-In the project directory, you can run:
+The application allows users to register, log in, browse job listings, create job advertisements and apply for jobs. All data is stored in a SQL Server database and accessed through a REST API.
 
-### `npm start`
+This project was developed as a final examination project in the .NET System Development course.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+### Authentication
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- User Registration
+- User Login
+- JWT Authentication
+- Protected API Endpoints
 
-### `npm run build`
+### Jobs
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Create New Jobs
+- View Available Jobs
+- Search Jobs by Title or Location
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Applications
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Apply for Jobs
+- View Submitted Applications
+- Store Applications in SQL Server Database
 
-### `npm run eject`
+### User Interface
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Responsive Design
+- Bootstrap Styling
+- Search Functionality
+- Modern Card Layout
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Technologies Used
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Frontend
 
-## Learn More
+- React
+- Axios
+- Bootstrap
+- JavaScript
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Backend
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- ASP.NET Core Web API
+- Entity Framework Core
+- JWT Authentication
+- C#
 
-### Code Splitting
+### Database
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- SQL Server
+- Entity Framework Core Migrations
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Project Structure
 
-### Making a Progressive Web App
+### Backend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```text
+RecruitmentPlatform.API
+│
+├── Controllers
+├── Models
+├── DTOs
+├── Data
+├── Migrations
+├── Program.cs
+└── appsettings.json
+```
 
-### Advanced Configuration
+### Frontend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```text
+RecruitmentPlatform.Client
+│
+├── public
+├── src
+│   ├── components
+│   ├── App.js
+│   └── App.css
+│
+├── package.json
+└── package-lock.json
+```
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+# How To Run The Project
 
-### `npm run build` fails to minify
+## Backend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Clone the API repository.
+2. Open the solution in Visual Studio 2022.
+3. Open Package Manager Console.
+4. Run:
+
+```powershell
+Update-Database
+```
+
+5. Press:
+
+```text
+F5
+```
+
+or
+
+```text
+Ctrl + F5
+```
+
+Swagger should open automatically.
+
+The API will run on:
+
+```text
+https://localhost:7059
+```
+
+---
+
+## Frontend
+
+1. Clone the Client repository.
+2. Open the project in Visual Studio Code.
+3. Open a terminal in the client folder.
+
+Install dependencies:
+
+```powershell
+npm install
+```
+
+Start React:
+
+```powershell
+npm start
+```
+
+The application will be available at:
+
+```text
+http://localhost:3000
+```
+
+---
+
+## Database
+
+The project uses SQL Server and Entity Framework Core.
+
+Stored data includes:
+
+- Users
+- Jobs
+- Job Applications
+
+The database is automatically created through Entity Framework migrations.
+
+---
+
+## Future Improvements
+
+Possible future improvements include:
+
+- CV Upload Support
+- Company Profiles
+- Email Notifications
+- Role-Based Authorization
+- AI-Based Candidate Matching
+
+---
+
+## Author
+
+**Omer Cheway**
+
+Final Examination Project
+
+.NET System Development
+
+2026
